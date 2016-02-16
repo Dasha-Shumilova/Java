@@ -3,7 +3,7 @@ public class Test {
  
     public static void main(String[] args) {
         Student st1 = new Student("Алієв Віталій", 19, true, "2-ЕК", 4.5);
-        Student st2 = new Student("Воловодіївська Ольга", 19, false, "2-ЕК", 4.7);
+        Student st2 = new Student("Воловодівська Ольга", 19, false, "2-ЕК", 4.7);
         Student st3 = new Student("Зубко Лілія", 19, false, "2-ЕК", 4.2);
         Student st4 = new Student("Шумілова Дарія", 19, false, "2-ЕК", 4.2);
         Student st5 = new Student("Соснова Юлія", 18, false, "2-ЕК", 4.5);
@@ -25,8 +25,9 @@ public class Test {
         for (Student student : FK)
             System.out.println(student);
  
-        System.out.println("Список викладачів ");
-        List<Teacher> theacher = manager.getDocents(teachers);
+        System.out.println("Список доцентов ");
+        List<Teacher> docents = manager.getDocents(teachers);
+        for (Teacher teacher : docents)
             System.out.println(teacher);
  
     }
