@@ -20,7 +20,7 @@ public class Test {
  
         UniversityManager manager = new UniversityManager();
  
-        System.out.println("Список студентов группы 2-ЕК ");
+        System.out.println("Список студентів групи 2-ЕК ");
         List<Student> FK = manager.getStudentsFromTheSameGroup(students, "2-ЕК");
         for (Student student : FK)
             System.out.println(student);
