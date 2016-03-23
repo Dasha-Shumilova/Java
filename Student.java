@@ -1,7 +1,7 @@
 public class Student extends Person {
-    // группа
+    // група
     private String group;
-    // средний бал
+    // средній бал
     private double rating;
  
     public String getGroup() {
