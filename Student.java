@@ -28,7 +28,7 @@ public class Student extends Person {
  
     @Override
     public String toString() {
-        return "Студент " + getName() + " учится в групе " + getGroup()
-                + " и имеет средний бал " + getRating();
+        return "Студент " + getName() + " вчиться в групі " + getGroup()
+                + " не має средній бал " + getRating();
     }
 }
