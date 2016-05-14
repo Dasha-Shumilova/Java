@@ -32,13 +32,13 @@ public abstract class Person {
         this.age = age;
         this.isMale = isMale;
     }
-     public Person(){}
+    
+    public Person(){}
 
     public String toJson() {
         return "{\"name\":" + "\"" + name + "\"" + "," + "\"age\":" + "\"" + age + "\"" + ","
                 + "\"isMale\":" + isMale + "}";
     }
-
 
     public void writeToFile(String filePath) throws IOException {
         Writer writer = null;
@@ -54,7 +54,6 @@ public abstract class Person {
 
     public void readFromFile(String url) {
         try {
-
             FileReader reader = new FileReader(url);
             BufferedReader in = new BufferedReader(reader);
             String string;
@@ -71,11 +70,9 @@ public abstract class Person {
       JSONParser parser = new JSONParser();
 
        try {
-
-
-           Object obj = this.getParser().parse(new FileReader(filePath));
+         Object obj = this.getParser().parse(new FileReader(filePath));
            JSONObject jsonObject = (JSONObject) obj;
-
+           
            String name = (String) jsonObject.get("name");
            Long age = (Long) jsonObject.get("age");
            boolean isMale = (boolean) jsonObject.get("isMale");
