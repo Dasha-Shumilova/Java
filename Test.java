@@ -29,6 +29,11 @@ public class Test {
         List<Teacher> docents = manager.getDocents(teachers);
         for (Teacher teacher : docents)
             System.out.println(teacher);
- 
+           
+        Person person = new Person();
+
+       person.writeToFile("D:\\ЧНУ\\2 курс\\програмування\\OOP\\src\\json.txt");
+       person.readFromFile("D:\\ЧНУ\\2 курс\\програмування\\OOP\\src\\json.txt");
+       person.FromJson("D:\\ЧНУ\\2 курс\\програмування\\OOP\\src\\json.txt");
     }
 }
